@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/uploadImg/upload.wxml",
     "pages/nameList/nameList.wxml",
     "pages/index/index",
     "pages/logs/logs"
-   
+  
   ],
   "window": {
     "backgroundTextStyle": "light",
