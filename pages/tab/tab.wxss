@@ -22,6 +22,6 @@
   display:inline-block;
 }
 .tabNav .cur text{ 
-  border-bottom:5rpx solid #36ccf9;
-  color:#36ccf9;
+  border-bottom:5rpx solid #ffcd32;
+  color:#ffcd32;
 }
