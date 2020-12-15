@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/uploadImg/upload.wxml",
-    "pages/nameList/nameList.wxml",
+    "pages/uploadImg/upload",
+    "pages/nameList/nameList",
     "pages/index/index",
     "pages/logs/logs"
   
