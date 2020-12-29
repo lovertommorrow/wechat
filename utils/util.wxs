@@ -1,0 +1,11 @@
+var formateTime=function(item,type) {
+  console.log(arguments)
+  if(type === 'time'){
+    return item.time.split(' ')[0]
+  }else{
+    return item.time.split(' ')[1]
+  }
+}
+module.exports = {
+  formateTime: formateTime
+}

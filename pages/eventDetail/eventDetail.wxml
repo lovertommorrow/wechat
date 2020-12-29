@@ -1,0 +1,84 @@
+<view class="eventDetailContain">
+  <wxs module="filters" src="../../utils/util.wxs"></wxs>
+  <view class="eventDetail">
+    <view class="eventDetailTop">
+      <text class="eventType">事件情况</text>
+      <text class="eventStatus">紧急，立即处理</text>
+    </view>
+    <view class="eventDetailDesc">
+      <view>
+        <text>事件编号：</text>
+        <text>202009022011300</text>
+      </view>
+      <view>
+        <text>事件分类：</text>
+        <text>消防安全提醒</text>
+      </view>
+      <view>
+        <text>事件描述：</text>
+        <text>消防通道堵塞提醒</text>
+      </view>
+      <view>
+        <text>发生时间：</text>
+        <text>2020/9/20 13:18</text>
+      </view>
+      <view>
+        <text>发生地点：</text>
+        <text>明东社区 组团1入口</text>
+      </view>
+      <view>
+        <text>所属社区：</text>
+        <text>明东社区</text>
+      </view>
+      <view>
+        <text>关联工作人员：</text>
+        <text>小明</text>
+      </view>
+      <view>
+        <text>关联居民：</text>
+        <text>小红等四人</text>
+      </view>
+    </view>
+  </view>
+  <view class="eventProcess">
+    <view class="eventProcessTitle">
+      <text style="color:#999">当前：</text>
+      <text class="eventTitleType">{{dealStatus}}</text>
+    </view>
+    <scroll-view scroll-y="true" class="timeLineContain">
+      <view class="timeStepContain" wx:for="{{eventTimeline}}" wx:key='index' wx:for-item='item' >
+        <view class="{{item.status == 0?'timeRedLine':'timeLine'}}">
+          <view class="handleTime">{{filters.formateTime(item,"time")}}</view>
+          <view class="handleTime">{{filters.formateTime(item,"sec")}}</view>
+        </view>
+        <view class="timeMsg {{index == 0?'top20':''}}">
+          <text class="preHandle" wx:if="{{index==0}}">预处理</text>
+          <text class="sysMsg" wx:if="{{item.handler == 'auto'}}">[系统自动]</text>
+          <text class="sysMsg" wx:if="{{item.handler !== 'auto'}}">[{{item.handler}}]</text>
+          <text>{{item.message}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="eventDetailFooter">
+    <button bindtap="bindOpenNotice" class="btn" type="default" plain="true">通知居民</button>
+    <button bindtap="bindEmergencyReport" class="btn" type="default" plain="true">紧急上报</button>
+    <button bindtap="bindProcessed" class="btn" type="default" plain="true">处理完成</button>
+  </view>
+  <notice-dialog 
+    isShow="{{showNoticeDialog}}"
+    bind:Cancel="bindCancel"
+    bind:Save="bindSave"
+  ></notice-dialog>
+  <report-dialog 
+    isShow="{{showReportDialog}}"
+    bind:CancelReport="bindCancel"
+    bind:SaveReport="bindSaveReport"
+  ></report-dialog>
+  <processed-dialog
+    wx:if="{{showProcessedDialog}}"
+    isShow="{{showProcessedDialog}}"
+    bind:Cancel="bindCancel"
+    bind:Save="bindSaveProcessed"
+  ></processed-dialog>
+</view>

@@ -1,0 +1,6 @@
+.eventProcessPerson{
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #666;
+  line-height: 42rpx;
+}

@@ -1,0 +1,19 @@
+
+<view class="eventContain">
+  <view class="evetnTop">
+    <view class="eventProcess">待处理事件</view>
+    <view class="eventHistory" bindtap="bindToHistoryPage">
+      <text>查看历史事件</text>
+      <image src="../../images/daichuli_icon_arrow.png"></image>
+    </view>
+  </view>
+  <tab-component
+    tabList="{{eventTabList}}"
+    bind:tabChange="bindtabChange"
+  ></tab-component>
+  <scroll-view scroll-y="true" class="eventList">
+    <event-list
+      bind:goEventDetail="bindGoDetail"
+    ></event-list>
+  </scroll-view>
+</view>

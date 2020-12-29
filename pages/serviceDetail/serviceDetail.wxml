@@ -1,0 +1,49 @@
+<view class="serviceDetaiContain">
+  <view class="detailDesc">
+    <view class="detailTitle">
+      <text>社区居民“应知应会知识宣传资料发放</text>
+    </view>
+    <view class="detailItem">
+      <view>
+        <text>活动分类：</text>
+        <text>城市文明宣传活动</text>
+      </view>
+      <view>
+        <text>开始时间：</text>
+        <text class="time">2020-08-21 9:00</text>
+      </view>
+      <view>
+        <text>结束时间：</text>
+        <text class="time">2020-08-21 15:00</text>
+      </view>
+      <view>
+        <text>活动地点：</text>
+        <text>社区服务</text>
+      </view>
+      <view>
+        <text>组织单位：</text>
+        <text>社区居民委员会中心</text>
+      </view>
+      <view>
+        <text>活动规模：</text>
+        <text>25人</text>
+      </view>
+    </view>
+  </view>
+  <view class="uploadFile" wx:if="{{true}}">
+    <view class="uploadTitle">
+      <text style="color:#FF4128;margin-right:4rpx">*</text>
+      <text>活动图片</text>
+    </view>
+    <view class="imgContain">
+      <view class="imgShow imgClose" wx:for="{{uploaderList}}" wx:key='item' wx:for-item='item'>
+        <image bindtap="bindShowImg" data-index="{{index}}" src="{{item}}"></image>
+        <text bindtap="bindClearImg" data-index="{{index}}"  class="closeBtn">X</text>
+      </view>
+      <view class="imgShow uploadButton" wx:if="{{showUpload}}" bindtap="bindUploadImage">
+        <image src="../../images/home_menu_juminfuwu.png"></image>
+        <text>添加图片</text>
+      </view>
+    </view>
+  </view>
+</view>

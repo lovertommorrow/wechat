@@ -1,0 +1,10 @@
+<dialog-component 
+  show="{{isShow}}"
+  title="通知居民"
+  cancelText="取消"
+  saveText="拨打电话"
+  bind:cancel="bindCancel"
+  bind:save="bindSave"
+>
+  <view class="eventProcessPerson">{{msg}}</view>
+</dialog-component>

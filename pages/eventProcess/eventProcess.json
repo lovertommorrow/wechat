@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "事件处理",
+  "usingComponents": {
+    "tab-component": "../../components/tab/tab",
+    "event-list": "../../components/eventList/eventList"
+  }
+}

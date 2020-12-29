@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "社区活动",
+  "usingComponents": {
+    "tab-component": "../../components/tab/tab",
+    "service-list": "../../components/serviceList/serviceList"
+  }
+}

@@ -1,0 +1,84 @@
+.serviceListContain{
+  width: 100%;
+}
+.listItem{
+  width: 100%;
+  height: 172rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 8rpx;
+}
+.itemDate{
+  width: 100rpx;
+  background: #EDF3FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.today{
+  width: 64rpx;
+  height: 64rpx;
+  background: #4D8DCC;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 64rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.day{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #4D8DCC;
+}
+.month{
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #4D8DCC;
+  opacity: 0.59;
+}
+.itemTime{
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+.itemTime text{
+  display: inline-block;
+  width: 200rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+.itemDetail{
+  width: 396rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 24rpx;
+}
+.itemDetailTitle{
+  width: 372rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  color: #333333;
+}
+.uploadRecord{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #FF4128;
+}
+.arrow{
+  width: 15rpx;
+  height: 24rpx;
+  vertical-align: baseline;
+}

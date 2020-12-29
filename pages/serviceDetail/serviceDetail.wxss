@@ -1,0 +1,78 @@
+.serviceDetaiContain{
+  width: 100%;
+  overflow-x: hidden;
+  padding-left: 28rpx;
+}
+.detailDesc{
+  width: 100%;
+  padding-top: 30rpx;
+  padding-bottom: 36rpx;
+}
+.detailTitle{
+  padding-bottom: 30rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333333;
+}
+.detailItem{
+  font-size: 28rpx;
+  font-weight: 400;
+  line-height: 54rpx;
+  color: #666666;
+}
+.time{
+  color: #4D8DCC;
+}
+.uploadTitle{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333333;
+  padding-bottom: 24rpx;
+}
+.imgContain{
+  width: 690rpx;
+}
+.imgShow{
+  width: 214rpx;
+  height: 214rpx;
+  margin-bottom: 20rpx;
+  float: left;
+  margin-left: 18rpx;
+  border: 1px dashed #979797;
+}
+.imgShow:nth-child(3n+1){
+  margin-left: 0;
+}
+.imgClose{
+  position: relative;
+}
+.closeBtn{
+  position: absolute;
+  display: inline-block;
+  width: 36rpx;
+  height: 36rpx;
+  border-bottom-left-radius:36rpx;
+  background: #494949;
+  color: #fff;
+  font-size: 18rpx;
+  top: 0;
+  right: 0;
+  text-align: center;
+  line-height: 26rpx;
+}
+.uploadButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.uploadButton image{
+  width: 62rpx;
+  height: 49rpx;
+  padding-bottom: 20rpx;
+}
+.uploadButton text{
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #B2B2B2;
+}
