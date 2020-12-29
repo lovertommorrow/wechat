@@ -1,8 +1,0 @@
-<dialog-component 
-  show="{{isShow}}"
-  title="紧急上报"
-  bind:cancel="bindCancel"
-  bind:save="bindSave"
->
-  <textarea class="reportText" value="{{textVal}}" maxlength="-1" placeholder="必须说明原因" bindinput="bindInputText" />
-</dialog-component>

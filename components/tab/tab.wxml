@@ -1,9 +1,0 @@
-<view class="tabContainer">
-  <view class="tabNav">
-    <view bindtap="bindTabChange" class="tabItem" wx:for="{{tabList}}" wx:key='id' wx:for-item='item' data-id="{{item.id}}">
-      <view class="tabTitle">{{item.title}}</view>
-      <view class="tabNum {{item.title=='紧急事件'?'colorError':''}}  {{item.title=='普通事件'?'colorWarring':''}}">{{item.num}}</view>
-    </view>
-  </view>
-  <view class="tabLine" style='left:{{left*33.34}}%;'></view>
-</view>

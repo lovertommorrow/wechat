@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "事件详情",
-  "usingComponents": {
-    "notice-dialog": "../noticePersonDialog/noticeDialog",
-    "report-dialog":"../reportDialog/reportDialog",
-    "processed-dialog":"../processed/processedDialog"
-  }
-}
